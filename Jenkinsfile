@@ -24,7 +24,7 @@ pipeline{
         }
         stage('deploy'){
             steps{
-                sh 'java -jar /home/coder/.jenkins/workspace/declarative/target/*.jar'
+                sh 'java -jar /var/lib/jenkins/workspace/declarative/target/*.jar'
             }
         }
     }
